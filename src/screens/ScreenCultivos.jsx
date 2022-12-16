@@ -4,6 +4,7 @@ import Card from '../components/Card';
 
 const ScreenCultivos = ({ navigation }) => {
 
+    // Datos de los cultivos
     const [data] = useState([
         {
             nombreCultivo: 'Papa',
@@ -26,13 +27,14 @@ const ScreenCultivos = ({ navigation }) => {
     ]);
 
     return (
+        // Renderiza en la pantalla los cultivos
         <View>
             <FlatList
                 data={data}
-                contentContainerStyle={{ alignItems: 'center' }}
+                contentContainerStyle={{ alignItems: 'center', padding: 20 }}
                 renderItem={({ item }) => (
                     <TouchableOpacity
-                        onPress={() => navigation.navigate('Detalles', item)}
+                        onPress={() => navigation.navigate('Plagas y enfermedades', item)}
                     >
                         <Card>
                             <Text style={{ fontWeight: 'bold' }} >{item.nombreCultivo}</Text>

@@ -8,6 +8,7 @@ export default [
     sintomas: 'Afecta las hojas, los tallos y los tubérculos y puede destruir un campo de papas en pocos días. Los primeros síntomas aparecen en los bordes de las hojas inferiores, como pequeñas manchas de color verde oscuro de aspecto “acuoso” (sensación húmeda al tacto)',
     medidasPreventivas: 'semilla libre de enfermedades. El uso de semilla no infectada es una condición básica para la producción de papa, puesto que elimina del campo una fuente primaria de infección. Procedimiento de siembra. Donde las temporadas de lluvia sean definidas, la severidad de la enfermedad puede reducirse mediante un cambio en momentoResistencia. Deben utilizarse variedades con mayor resistencia siempre y cuando tengan aceptación comercial.',
     controlQuimico: 'Manzate, Dithane, Mancozeb',
+    img: require('../assets/enfermedades/tizon_tardio_de_la_papa.jpg'),
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export default [
    sintomas: 'En las hojas se desarrollan lesiones más o menos circulares, de color marrón oscuro, con anillos dispuestos concéntricamente semejando un tablero de tiro al blanco; primero se desarrollan en las hojas inferiores, más viejas',
     medidasPreventivas: 'Post-cosecha: todos los residuos infectados deben sacarse del campo después de la cosecha.\nRiego: riego adecuado y aplicación de fertilizantes (de acuerdo con las recomendaciones)',
     controlQuimico: 'Manzate, Dithane, Mancozeb',
+    img: require('../assets/enfermedades/tizon_temprano_de_la_papa.jpg'),
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ export default [
     sintomas: 'Inicialmente afecta las flores, las cuales se pudren y muestran una esporulación de color grisáceo. Posteriormente, el tejido infectado cae sobre las hojas, iniciando la infección del follaje, donde se presentan lesiones inicialmente cafés bronceado, húmeda en su inicio y delimitada por las venas.',
     medidasPreventivas: 'Pulverización: Las pulverizaciones con productos preventivos pueden ser de utilidad, siempre que el follaje no esté recibiendo demasiada sombra.',
     controlQuimico: 'Botrilex',
+    img: require('../assets/enfermedades/papa_botrytis.jpg'),
   },
   {
     id: 4,
@@ -38,6 +41,8 @@ export default [
     sintomas: 'La plaga causa síntomas aéreos poco diferenciables, excepto por una leve amarillez, menor vigor, escaso crecimiento y una senescencia anticipada. Las plantas evidencian hojas que toman un color verde pálido o amarillo que se marchita cuando el clima es cálido, presentan poco desarrollo y se ven descoloridas.',
     medidasPreventivas: 'Semilla libre de enfermedades. El uso de semilla no infectada es una condición básica para la producción de papa, puesto que elimina del campo una fuente primaria de infección.\nResistencia. Deben utilizarse variedades con mayor resistencia siempre y cuando tengan aceptación comercial.',
     controlQuimico: 'Tervigo',
+    img: require('../assets/plagas/papa_nematodo_dorado.jpg'),
+    img2: require('../assets/plagas/papa_sintoma_nematodo_dorado.jpg'),
   },
   {
     id: 5,
@@ -48,6 +53,8 @@ export default [
     sintomas: 'El síntoma típico del ataque de D. destructor es la pudrición seca del tubérculo. Ingresa al tubérculo a través de las lenticelas y una vez dentro del tejido forma colonias de individuos en todos los estados de desarrollo.',
     medidasPreventivas: 'Resistencia. Deben utilizarse variedades con mayor resistencia siempre y cuando tengan aceptación comercial.',
     controlQuimico: 'Aldicarb, sin embargo, ante los escases del producto y su impacto en el medio ambiente es preferible realizar rotación de cultivos como método de control.',
+    img: require('../assets/plagas/papa_nematodo_de_la_pudricion_seca.jpg'),
+    img2: require('../assets/plagas/papa_sintoma_nematodo_de_la_pudricion_seca.jpg'),
   },
   {
     id: 6,
@@ -58,6 +65,7 @@ export default [
     sintomas: 'Los síntomas del polvillo de la hoja se reconocen por la presencia de pústulas de aspecto pulverulento, anaranjado, principalmente en la lámina foliar. Infecciones más severas pueden atacar la vaina foliar y las espiguillas de la panoja.',
     medidasPreventivas: 'Siembra; siembra de variedades resistentes o tolerantes.\nFertilización: Debe evitarse el exceso de fertilización nitrogenada, lo cual favorece una mayor severidad del ataque.',
     controlQuimico: 'Orkestra Ultra',
+    img: require('../assets/enfermedades/avena_roya.jpg'),
   },
   {
     id: 7,
@@ -68,6 +76,7 @@ export default [
     sintomas: 'Los síntomas se caracterizan por la presencia de manchas necróticas en las láminas foliares, de color café oscuro, en su mayoría avaladas, de 2 a 8 m.m aproximadamente, rodeadas de un halo clorótico. También pueden presentarse en las vainas tobares que rodean el tallo',
     medidasPreventivas: 'Rotación de cultivos y el atraso en la época de siembra, en especial cuando el destino del cultivo es el corte para ensilaje.',
     controlQuimico: 'Artea 330 EC',
+    img: require('../assets/enfermedades/avena_septoriosis.jpg'),
   },
   {
     id: 8,
@@ -78,6 +87,7 @@ export default [
     sintomas: 'El síntoma más característico del oidio, es la aparición de lo que asemeja pequeñas motas de algodón sobre las hojas, y que corresponden al micelio y las esporas del hongo. Estas estructuras pueden recubrir parcial o totalmente las láminas y vainas foliares, afectando la fotosíntesis.',
     medidasPreventivas: 'Variedades: empleo de variedades resistentes o tolerantes al agente causal.\nFertilización: evitar exceso de fertilización nitrogenada.\nPlantación: regular la población de plantas',
     controlQuimico: 'Nabac 25 Wp',
+    img: require('../assets/enfermedades/avena_oidio.jpg'),
   },
   {
     id: 9,
@@ -88,6 +98,8 @@ export default [
     sintomas: 'Amarillamiento del follaje, perdida de sujeción de las plantas y finalmente la muerte de estas.',
     medidasPreventivas: 'Laboreo de suelo. Invertir la capa de suelo los primeros 5 cm de modo que los gusanos queden expuestos a la luz y sean devorados por sus depredares naturales.\nMuestreo de suelo. Tomar muestras de suelo para determinar la cantidad de gusanos promedios encontrados por ha.',
     controlQuimico: 'Entre los principales agentes de control natural encontrados más comúnmente destacan las aves silvestres diurnas como la bandurria y tiuque, y aves nocturnas como el pequén. Sin embargo, son los insectos depredadores y parasitoides, y los hongos entomopatógenos, los que aparecen regularmente en la revisión de las muestras de suelo y, por ende, necesarios de reconocer y evaluar.',
+    img: require('../assets/plagas/avena_gusanos_blancos.jpg'),
+    img2: require('../assets/plagas/avena_sintoma_gusanos_blancos.jpg'),
   },
   {
     id: 10,
@@ -98,6 +110,8 @@ export default [
     sintomas: 'En estado de plántula corta a nivel del cuello y ocasionalmente asciende al follaje para alimentarse de las hojas basales.',
     medidasPreventivas: 'Control cultural: el control de malezas es importante para reducir los ataques de cortadores, porque allí invernan las larvas, así como la preparación del suelo para destruir las larvas con rastras.',
     controlQuimico: 'Control biológico: en Chile se presentan parasitoides de larvas, tales como himenópteros del género Apanteles y dípteros de la familia Tachinidae. También puede haber control natural por microavispillas del género Trichogramma.\nControl químico: Pyrinex 48 E',
+    img: require('../assets/plagas/avena_gusanos_cortadores.jpg'),
+    img2: require('../assets/plagas/avena_sintoma_gusanos_cortadores.jpg'),
   },
   {
     id: 11,
@@ -108,6 +122,7 @@ export default [
     sintomas: 'Emergencia de plantas desuniformes, plantas cloróticas, raíces necróticas, espigas decoloradas, vanas.',
     medidasPreventivas: 'Planificar una estrategia de rotación de cultivos y manejo de rastrojos permite disminuir el riesgo de ataque y diseminación de numerosas enfermedades y plagas, cuyos agentes causales sobreviven en residuos de cultivo y en el suelo',
     controlQuimico: 'Point benomyl 50 p',
+    img: require('../assets/enfermedades/trigo_mal_del_pie.jpg'),
   },
   {
     id: 12,
@@ -118,6 +133,7 @@ export default [
     sintomas: 'Manchas cloróticas que necrosan en el centro y presentan puntos negros.',
     medidasPreventivas: 'Uso de variedades resistentes a determinadas enfermedades, INIA ha incorporado esta resistencia varietal a las variedades de candeales, lo que permite disminuir considerablemente las aplicaciones de fungicidas y en muchos casos no usar fungicidas foliares.',
     controlQuimico: 'Point benomyl 50 p',
+    img: require('../assets/enfermedades/trigo_septoriosis_foliar.jpg'),
   },
   {
     id: 13,
@@ -128,6 +144,7 @@ export default [
     sintomas: 'Aparición de lesiones generalmente ovales, de color café rojizas, principalmente en tallo. También se presentan en hojas, vainas foliares y espigas.',
     medidasPreventivas: 'Identificación de los estados de desarrollo del trigo permitirá a los agricultores llevar un manejo y control eficiente. De esta manera, si se presenta la enfermedad, se podrá controlar en su estado inicial.',
     controlQuimico: 'Point benomyl 50 p',
+    img: require('../assets/enfermedades/trigo_roya_del_tallo.jpg'),
   },
   {
     id: 14,
@@ -138,6 +155,8 @@ export default [
     sintomas: 'Comúnmente se les encuentra bajo la vaina de la hoja bandera, alimentándose del tallo. No obstante, también pueden atacar las hojas, tallos y espigas. Las formas adultas y las ninfas producen daños y, cuando su número es grande, hacen que el tejido del cual se alimentan tome una coloración gris plateada.',
     medidasPreventivas: 'Monitoreo de las condiciones climáticas los patógenos se ven favorecidos bajo ciertas condiciones climáticas, altas temperaturas combinadas con alta humedad durante el ciclo de cultivo, puede ser un factor determinante para el desarrollo de enfermedades foliares y radiculares.',
     controlQuimico: 'Thripex',
+    img: require('../assets/plagas/trigo_trips.jpg'),
+    img2: require('../assets/plagas/trigo_sintoma_trips.jpg'),
   },
   {
     id: 15,
@@ -148,5 +167,7 @@ export default [
     sintomas: 'Síntomas: Las babosas y caracoles se alimentan del endospermo de las semillas en germinación, cortan las plántulas a ras del suelo y mordisquean las plantas más grandes, dejando franjas longitudinales en las hojas',
     medidasPreventivas: 'Monitoreo: importante monitorizar nuestras cosechas para detectar su aparición lo antes posible.',
     controlQuimico: 'Toximol',
+    img: require('../assets/plagas/trigo_babosas.jpg'),
+    img2: require('../assets/plagas/trigo_sintoma_babosas.jpg'),
   }
 ]

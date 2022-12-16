@@ -12,22 +12,57 @@ import ScreenBuscar from "./src/screens/ScreenBuscar";
 //Icons
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import ScreenMoreInfo from "./src/screens/ScreenMoreInfo";
+import ScreenPlagEnf from "./src/screens/ScreenPlagEnf";
+import ScreenPlagEnfInfo from "./src/screens/ScreenPlagEnfInfo";
+import ScreenDetalles from "./src/screens/ScreenDetalles";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
 
+// Navegación de tipo stack, se encarga de la navegación de toda la información de los cultivos, plagas y enfermedades
 const Mystack = () => {
     return(
-        <Stack.Navigator>
+        <Stack.Navigator
+            headerShown={false}
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: "#C3F3C0",
+                    borderColor: "#F5F5F5",
+                    height: 80,
+                    borderRadius: 15,
+                },
+                animation: 'slide_from_right',
+                backAnimation: 'slide_from_left',
+            }}
+        >
+            <Stack.Screen
+                name="Buscar sintomas"
+                component={ScreenBuscar}
+            />
             <Stack.Screen
                 name="Cultivos"
                 component={ScreenCultivos}
             />
+            <Stack.Screen
+                name="Plagas y enfermedades"
+                component={ScreenPlagEnf}
+            />
+            <Stack.Screen
+                name="Mas información"
+                component={ScreenPlagEnfInfo}
+            />
+            <Stack.Screen
+                name="Detalles"
+                component={ScreenDetalles}
+            />
+
+                
         </Stack.Navigator>
     )
 }
 
+// Navegación de tipo tab, se encarga de la navegación de las pantallas de inicio, buscar y mas información
 const MyTabs = () => {
     return(
         <Tab.Navigator
@@ -49,7 +84,7 @@ const MyTabs = () => {
                     borderColor: "#F5F5F5",
                     height: 80,
                     borderRadius: 15,
-                }
+                },
             }}
         >
             <Tab.Screen 
@@ -64,26 +99,31 @@ const MyTabs = () => {
              />
              <Tab.Screen
                 name="Buscar"
-                component={ScreenBuscar}
+                initialParams={{screen: "Buscar sintomas"}}
+                component={Mystack}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons name="magnify" size={30} color={color} />
                     ),
+                    headerShown: false,
                 }}
             />
             <Tab.Screen
-                name="Cultivos"
-                component={ScreenCultivos}
+                name="Información"
+                initialParams={{screen: "Cultivos"}}
+                component={Mystack}
                 options={{
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons name="information" size={30} color={color} />
                     ),
+                    headerShown: false,
                 }}
             />
         </Tab.Navigator>
     )
 };
 
+// Navegación de tipo drawer, se encarga de la navegación de la pantalla de mas información, a su vez exporta la navegación en general
 export default function Navigation() {
     return(
         <NavigationContainer>
