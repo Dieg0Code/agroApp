@@ -23,7 +23,7 @@ const ScreenBuscar = ({ navigation }) => {
     // Buscar por nombre o nombre de cultivo
     const searchByNameOrCultivo = (text) => {
         const newData = masterData.filter((item) => {
-            const itemData = item.sintomas.toUpperCase() + item.nombre.toUpperCase() + item.nombreCultivo.toUpperCase();
+            const itemData = item.sintomas.toUpperCase() + item.nombre.toUpperCase() + item.nombreCultivo.toUpperCase() + item.descripcion.toUpperCase() +  item.medidasPreventivas.toUpperCase() + item.controlQuimico.toUpperCase() + item.tipo.toUpperCase();
             const textData = text.toUpperCase();
             return itemData.indexOf(textData) > -1;
         });

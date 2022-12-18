@@ -8,13 +8,13 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import ScreenInicio from "./src/screens/ScreenInicio";
 import ScreenCultivos from "./src/screens/ScreenCultivos";
 import ScreenBuscar from "./src/screens/ScreenBuscar";
-
-//Icons
-import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import ScreenMoreInfo from "./src/screens/ScreenMoreInfo";
 import ScreenPlagEnf from "./src/screens/ScreenPlagEnf";
 import ScreenPlagEnfInfo from "./src/screens/ScreenPlagEnfInfo";
 import ScreenDetalles from "./src/screens/ScreenDetalles";
+
+//Icons
+import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -146,7 +146,7 @@ export default function Navigation() {
                 headerShown={false}
                 />
                 <Drawer.Screen
-                name="Descargar mas información"
+                name="Acerca de"
                 component={ScreenMoreInfo}
                 />
             </Drawer.Navigator>
